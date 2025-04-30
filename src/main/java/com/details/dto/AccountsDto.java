@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Pattern;
 @Schema(name = "Accounts",
 description = "Account details of SBI")
 public class AccountsDto {
+	//this class is making use of Swagger
 	
 private Integer customerId;
 	
@@ -17,6 +18,7 @@ private Integer customerId;
     		)
     
 	private Long accountNumber;
+	
 	
     @NotEmpty(message = "Account type should not be empty")
     @Schema(description = "Account type of customer",example = "Saving")
